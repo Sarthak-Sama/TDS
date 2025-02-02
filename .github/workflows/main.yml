@@ -1,0 +1,16 @@
+name: Testing GitHub Actions
+
+on:
+  push:
+    branches:
+      - main # or specify the branch you want to trigger the action on push
+
+jobs:
+  collect-iss-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 23f3000709@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
