@@ -1,9 +1,9 @@
-name: Testing Github actions
+name: Testing GitHub Actions
 
 on:
-  schedule:
-    # Runs at 12:00 UTC (noon) every day
-    - cron: "0 12 * * *"
+  push:
+    branches:
+      - main # or specify the branch you want to trigger the action on push
 
 jobs:
   collect-iss-data:
